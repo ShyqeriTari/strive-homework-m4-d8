@@ -10,7 +10,6 @@ const SectionArea = (props) => {
   // };
 
   const location = useLocation()
-  console.log(location.pathname)
 
   const [movie, setMovie] = useState([])
 

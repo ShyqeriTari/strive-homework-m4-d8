@@ -8,7 +8,7 @@ const MyNavbar = function () {
   return (
     <>
       <Navbar   expand="lg" className="text-white">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand >
         <Link to={'/' }>
           <Image
             src="./img\Netflix_Logo_RGB.png"

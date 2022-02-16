@@ -31,7 +31,6 @@ const SingleComment = (props) =>  {
         )
         if (response.ok) {
           let data = await response.json()
-          console.log('THIS IS THE DATA '+ data)
          setComments(data)
         } else {
           alert('something went wrong :(')

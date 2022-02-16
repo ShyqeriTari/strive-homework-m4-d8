@@ -56,9 +56,9 @@ useEffect(() => {mount()}, [props.branding])
       >
         <h1 className="text-white">{props.branding}</h1>
         <Row >
-{movie.filter((movie, idx) => idx < 6).map(movie => (
+{movie.filter((movie, idx) => idx < 6).map((movie, idx) => (
 
-<SingleMovie onClick={(e) => props.function(id)} function={changeId}  branding={movie}/>
+<SingleMovie onClick={(e) => props.function(id)} function={changeId}  branding={movie} key={idx}/>
 )
   )}
           

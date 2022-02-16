@@ -12,7 +12,6 @@ import TvShows from './components/TvShows'
 function App() {
   return (
     <BrowserRouter>
-    <div className=" ">
       <MyNavbar />
       <SecondNavbar />
       <Routes>
@@ -21,7 +20,6 @@ function App() {
         <Route path='/details/:movieId' element={<MovieDetails />} />
         <Route path='*' element={<center><h1 className="text-white">404 - PAGE NOT FOUND</h1></center>} />
       </Routes>
-    </div>
     </BrowserRouter>
     
   );

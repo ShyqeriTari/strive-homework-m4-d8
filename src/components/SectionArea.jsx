@@ -1,13 +1,16 @@
 import { useEffect, useState} from "react";
 import { Row } from "react-bootstrap";
 import SingleMovie from "./SingleMovie";
-
+import { useLocation } from 'react-router-dom'
 
 const SectionArea = (props) => {
   // state = {
   //   movie:[],
   //   id: undefined,
   // };
+
+  const location = useLocation()
+  console.log(location.pathname)
 
   const [movie, setMovie] = useState([])
 
@@ -18,10 +21,10 @@ const SectionArea = (props) => {
   }
 
 const mount = async() => {
+let fetches = location.pathname === '/tv-shows' ? " http://www.omdbapi.com/?apikey=660268d7&s=" + props.branding + '&type=series' : "http://www.omdbapi.com/?apikey=660268d7&s=" + props.branding 
 
-  setMovie([])
     let response = await fetch(
-      "http://www.omdbapi.com/?apikey=660268d7&s=" + props.branding
+      fetches
     );
     let data = await response.json();
     setMovie(data.Search)

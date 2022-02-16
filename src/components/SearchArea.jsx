@@ -1,23 +1,23 @@
-import { Component } from "react";
-import { Row } from "react-bootstrap";
-import SingleMovie from "./SingleMovie";
+// import { Component } from "react";
+// import { Row } from "react-bootstrap";
+// import SingleMovie from "./SingleMovie";
 
-class SectionArea extends Component {
+// class SectionArea extends Component {
 
-  render() {
-    return (
-      <div
-        className="container-fluid mb-4"
-        style={{ paddingLeft: "30px", paddingRight: "30px" }}
-      >
-        <h1>Title</h1>
-        <Row>
+//   render() {
+//     return (
+//       <div
+//         className="container-fluid mb-4"
+//         style={{ paddingLeft: "30px", paddingRight: "30px" }}
+//       >
+//         <h1>Title</h1>
+//         <Row>
 
-<SingleMovie branding={this.props.Poster}/>          
-        </Row>
-      </div>
-    );
-  }
-}
+// <SingleMovie branding={this.props.Poster}/>          
+//         </Row>
+//       </div>
+//     );
+//   }
+// }
 
-export default SectionArea;
+// export default SectionArea;

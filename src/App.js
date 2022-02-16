@@ -16,7 +16,7 @@ function App() {
       <MyNavbar />
       <SecondNavbar />
       <Routes>
-      <Route path='/tv-shows' element={<TvShows />} />
+      <Route path='/tv-shows' element={<TvShows/>} />
         <Route path='/' element={<DisplaySections/> } />
         <Route path='/details/:movieId' element={<MovieDetails />} />
         <Route path='*' element={<center><h1 className="text-white">404 - PAGE NOT FOUND</h1></center>} />

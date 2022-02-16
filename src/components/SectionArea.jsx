@@ -2,6 +2,7 @@ import { useEffect, useState} from "react";
 import { Row } from "react-bootstrap";
 import SingleMovie from "./SingleMovie";
 
+
 const SectionArea = (props) => {
   // state = {
   //   movie:[],
@@ -23,7 +24,6 @@ const mount = async() => {
       "http://www.omdbapi.com/?apikey=660268d7&s=" + props.branding
     );
     let data = await response.json();
-    console.log(data.Search);
     setMovie(data.Search)
     props.function(id)
 

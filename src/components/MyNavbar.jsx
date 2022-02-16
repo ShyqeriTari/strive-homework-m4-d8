@@ -1,24 +1,35 @@
 import { Navbar, Nav, Image, Dropdown } from "react-bootstrap";
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 // backoffices is wrong linked, check it
 const MyNavbar = function () {
+
+  const location = useLocation()
+  console.log(location)
+
   return (
     <>
       <Navbar   expand="lg" className="text-white">
         <Navbar.Brand href="#home">
+        <Link to={'/' }>
           <Image
             src="./img\Netflix_Logo_RGB.png"
             alt="Netflix logo"
             width={130}
-          />
+          /></Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto text-white">
-            <Nav.Link href="#home" className="text-white">Home</Nav.Link>
-            <Nav.Link href="#TV Shows" className="text-white">TV Shows</Nav.Link>
-            <Nav.Link href="#Movies" className="text-white">Movies</Nav.Link>
-            <Nav.Link href="#RecentlyAdded" className="text-white">Recently Added</Nav.Link>
-            <Nav.Link href="#My List" className="text-white">My List</Nav.Link>
+          <Link to={'/' }>
+            <div  className={
+                location.pathname === '/' ? 'nav-link text-white mr-3 font-weight-bolder' : 'nav-link text-white mr-3'
+              }>Home</div>
+            </Link>
+            <Link to={'/tv-shows' }>
+            <div  className={
+                location.pathname === '/tv-shows' ? 'nav-link text-white mr-3 font-weight-bolder' : 'nav-link text-white mr-3'
+              }>TV shows</div>
+            </Link>
                       </Nav>
 
           <Image

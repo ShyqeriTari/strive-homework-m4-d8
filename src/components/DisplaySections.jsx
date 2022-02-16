@@ -26,7 +26,7 @@ import CommentArea from "./CommentArea";
 
     return(<>
     <center><input type="text" className='mt-4 mb-4' style={{width:'50%', margin:'auto', textAlign: 'center'}} placeholder='search your favorite movies' onChange={(event)=> handleSearch(event.target.value)}/></center>
-    <CommentArea branding2={id}/>
+    {/* <CommentArea branding2={id}/> */}
   {title.length > 3 &&  <SectionArea function={changeDisplayId} branding={title}/>}
 
   {title.length < 4 &&    <SectionArea function={changeDisplayId} branding='Harry Potter'/>} 

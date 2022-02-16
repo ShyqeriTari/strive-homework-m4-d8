@@ -1,0 +1,40 @@
+.row {
+  font-size: 11px;
+}
+p {
+  font-size: 10px;
+}
+.row {
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  margin-bottom: 10px;
+}
+
+.social-div {
+  width: 210px;
+  margin: 5rem 0 16px;
+}
+
+.btn-a {
+  border-radius: 1px;
+  margin-bottom: 12px;
+  border: 1px solid grey;
+  background-color: #181818;
+  padding: 4px 5px;
+  color: grey;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .row {
+    font-size: 11px;
+  }
+  p {
+    font-size: 8px;
+  }
+  .btn {
+    font-size: 10px;
+  }
+}

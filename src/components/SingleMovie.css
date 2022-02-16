@@ -1,0 +1,13 @@
+.animated :hover {
+    width: 110% !important;
+    position: absolute !important;
+    z-index: 9999 !important;
+    top: -10px;
+    left: -30px;
+    height: 250px!important;
+  }
+
+/* 
+  img{
+    object-fit: contain;
+  } */
